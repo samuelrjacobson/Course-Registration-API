@@ -1,3 +1,4 @@
+import time
 
 class Course:
     def __init__(self, prefix, course_number, cap, instructor, name, place, meeting_times):
@@ -12,7 +13,14 @@ class Course:
     def is_prefix(self, prefix):
         return self._prefix == prefix
 
+    def request_for_changing_room(self, new_place):
+        # TODO: unfinished
+        self.confirmation()
+        self._place = new_place
+    
+    def confirmation(self):
+        # Mock this method in testing
+        # ask for confirmation from admin
+        time.sleep(10) # to be finished
 
 courses = []
-courseA = Course("COSC", "111", 30, "John Doe", "Programming I", "PH 503", "TH 9:00")
-courses.append(courseA)
