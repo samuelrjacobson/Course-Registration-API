@@ -10,9 +10,10 @@ def test_get_courses():
         {
             "_prefix":"COSC",
             "_course_number":"111",
-            "_cap":30,
+            "_cap": 30,
             "_instructor":"John Doe",
             "_name":"Programming I",
             "_place":"PH 503",
             "_meeting_times":"TH 9:00"
-        }]
+        }
+    ]
