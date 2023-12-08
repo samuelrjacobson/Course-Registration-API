@@ -13,15 +13,15 @@ def student():
 """
 def test_addCourse(student, mocker):
 	mocker.patch(
-		'student.Student.addCourse'
+		'student.Student.confirmation'
 	)
-	student.addCourse(course)
-	assert student.registered_courses[0] == course
+	student.addCourse(course._prefix, course._course_number)
+	assert student.registered_courses[0]._prefix == course._prefix and student.registered_courses[0]._course_number == course._course_number
 	assert not student.registered_courses[0] == None
 """
 def test_addCourse(student):
 	courses.append(course)
 
-	student.addCourse(course)
+	student.addCourse(course._prefix, course._course_number)
 	assert student.registered_courses[0] == course
 	assert not student.registered_courses.pop() == None

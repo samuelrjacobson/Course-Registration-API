@@ -6,10 +6,13 @@ class Student:
 		self._name = name
 		self.registered_courses = []
 
-	def addCourse(self, course):
-		if course in courses:
-			self.registered_courses.append(course)
+	def addCourse(self, prefix, cn):
+		for course in courses:
+			if(course._prefix == prefix and course._course_number == cn):
+				self.registered_courses.append(course)
 
+	def confirmation(self):
+		return
 	
 registered_courses= []
 students = []
