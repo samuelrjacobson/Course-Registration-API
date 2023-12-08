@@ -7,9 +7,9 @@ def courseA():
         "Programming I", "PH 503", "TH 9:00")
     return courseA
     
-# def test_add_a_course(courseA):
-#     courses.append(courseA)
-#     assert len(courses) == 1
+#def test_add_a_course(courseA):
+#    courses.append(courseA)
+#    assert len(courses) == 1
 
 def test_is_prefix(courseA):
     assert courseA.is_prefix("COSC")
